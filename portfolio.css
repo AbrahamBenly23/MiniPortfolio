@@ -1,0 +1,155 @@
+/* Styling header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e2e;
+    padding: 15px 60px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #ffcc00;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-left: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    padding: 12px 15px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffcc00;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* header */
+main {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+/* Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2e, #3a3a5a);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styling portfolio */
+.portfolio {
+    padding: 80px 20px;
+}
+
+.portfolio h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk projek */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Perbesar ukuran card project */
+.project-card {
+    background-color: #2e2e4e;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px; /* Diperbesar */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover */
+.project-card:hover {
+    transform: scale(1.08);
+}
+
+/* Gambar dalam project card */
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Judul project */
+.project-card h3 {
+    margin-top: 12px;
+    font-size: 22px; /* Diperbesar */
+    color: #ffcc00;
+}
+
+/* Deskripsi project */
+.project-card p {
+    font-size: 16px;
+    color: #d1d1e9;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Tombol GitHub */
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #1e1e2e;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
